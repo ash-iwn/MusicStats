@@ -7,7 +7,23 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid Name="LayoutGrid" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Button x:Name="ClickMeButton"
+                Content="Click This"
+                HorizontalAlignment="Left"
+                Margin="217,56,0,0"
+                VerticalAlignment="Top"
+                Height="88" Width="155"
+                FontSize="24"
+                Click="ClickMeButton_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="Red" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <TextBlock x:Name="ResultTextBlock" HorizontalAlignment="Left" Margin="192,252,0,0" Text="Anything Here" TextWrapping="Wrap" VerticalAlignment="Top" Height="206" Width="276" FontSize="64"/>
 
     </Grid>
 </Page>

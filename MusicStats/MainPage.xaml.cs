@@ -13,7 +13,6 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
-// The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
 namespace MusicStats
 {
@@ -22,9 +21,12 @@ namespace MusicStats
     /// </summary>
     public sealed partial class MainPage : Page
     {
-        public MainPage()
-        {
+        public MainPage() {
             this.InitializeComponent();
+        }
+
+        private void ClickMeButton_Click(object sender, RoutedEventArgs e) {
+            ResultTextBlock.Text = "What is Xaml?";
         }
     }
 }

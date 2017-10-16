@@ -18,7 +18,7 @@ namespace MusicStats
         /// </summary>
         public App()
         {
-            InitializeComponent();
+            this.InitializeComponent();
             this.Suspending += OnSuspending;
         }
 
